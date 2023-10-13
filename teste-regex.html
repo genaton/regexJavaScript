@@ -21,6 +21,26 @@
     // var resultado = exp.exec(alvo);
     // console.log(resultado);
     // console.log(exp.lastIndex);
+
+    // REPLACE
+    var anoMesDia = '2007-12-31';
+    var exp = /-/g;
+    anoMesDia = anoMesDia.replace(exp, '/');
+      console.log(anoMesDia);
+
+    // SPLIT
+    var arquivo = '100,200-150,200;20';
+    var exp = /[,;-]/;
+    var valores = arquivo.split(exp);
+    console.log(valores);
+    
+    //MATCH
+    var codigos = 'A121B12112C12212F12G01';
+    var exp = /[A-Za-z]\d+/g;
+    var codigosExtraidos = codigos.match(exp);
+    console.log(codigosExtraidos);
+
+
     
 
 </script>
