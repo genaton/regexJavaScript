@@ -1,0 +1,28 @@
+<html>
+
+<script>
+    var alvo = '11a22b33c';
+    // var exp  = new RegExp('(\\d\\d)(\\w)', 'g'); // g= global
+    var exp  = /(\d\d)(\w)/g; // codigo alternativo, menos verboso, para a linha acima
+    
+    // teste boolean que retorna true ou false se a regex foi aplicada na var alvo.
+
+    console.log(exp.test(alvo));
+    
+    
+    // teste com loop 
+    // var resultado = null;
+    // while (resultado = exp.exec(alvo)){
+    //     console.log(resultado);
+    //     console.log(exp.lastIndex);
+    // };
+
+    //primeiro teste
+    // var resultado = exp.exec(alvo);
+    // console.log(resultado);
+    // console.log(exp.lastIndex);
+    
+
+</script>
+
+</html>
